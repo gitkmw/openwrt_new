@@ -19,6 +19,7 @@
 
 # add luci-plugins
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd-alt,miniupnpd-iptables,wireless-regdb}
 
 # luci-theme-argon for 18.06 by jerrykuku
 rm -rf luci-theme-argon
